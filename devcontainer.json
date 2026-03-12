@@ -1,0 +1,7 @@
+{
+  "name": "opencode-sandbox",
+  "build": { "dockerfile": "Containerfile" },
+  "runArgs": ["--publish", "4096:4096"],
+  "postCreateCommand": "uv sync --dev",
+  "forwardPorts": [4096]
+}
